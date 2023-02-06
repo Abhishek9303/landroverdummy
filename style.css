@@ -1,0 +1,570 @@
+@font-face {
+    font-family: abhi;
+    src: url(./font/AvenirNextW01-Regular.ttf);
+}
+
+@font-face {
+    font-family: rover;
+    src: url(./font/LandRoverWeb-Bold.ttf);
+}
+@font-face {
+    font-family: bolly;
+    src: url(./font/AvenirNextW01-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#navbr {
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(230, 218, 218);
+    display: flex;
+    position: fixed;
+    z-index: 999999;
+    justify-content: space-between;
+}
+
+#np1 {
+    height: 100%;
+    width: 28%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: abhi;
+
+}
+
+#np2 {
+    height: 100%;
+    width: 5%;
+    padding-right: 5vw;
+    font-size: 3vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-decoration: none; */
+}
+
+#np2>#har {
+    font-size: 3.299vh;
+}
+
+#np2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#np1 a {
+    padding-right: 2vw;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3vh;
+    font-weight: 900;
+}
+
+#ilogo img {
+    padding-right: 2vw;
+    height: 46px;
+    width: 89px;
+    background-position: center;
+    background-size: cover;
+}
+
+#tick {
+    display: flex;
+    align-items: baseline;
+}
+
+#page1{
+    height: calc(100vh - 8vh);
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    /* overflow-x: auto; */
+    /* border: 1px solid black; */
+}
+#firstpage{
+    display: flex;
+    
+}
+
+#div1 {
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+video {
+    /* z-index: ; */
+    /* margin-top:-8vh ; */
+    width: 100%;
+    background-size: cover;
+}
+
+#page2 {
+    padding-top: 1px;
+    font-family: abhi;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items; */
+    width: 100%;
+    background-color: white;
+}
+
+#centerdiv {
+    height: 45%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+#centerdiv h4 {
+    text-transform: capitalize;
+}
+
+#centerdiv button {
+    margin-top: 5vh;
+    width: 12vw;
+    padding: 1.5vh;
+    transition: all 0.8s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-family: gilroy;
+    letter-spacing: 2px;
+}
+
+#centerdiv h1 {
+    font-size: 4vh;
+    font-weight: 500;
+}
+
+#centerdiv button:hover {
+    color: black;
+    background-color: white;
+}
+
+#page2 #card {
+    position: absolute;
+    bottom: 0;
+    height: 32vh;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 21vh;
+    width: 22vw;
+    padding: 10px;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+    position: relative;
+    cursor: pointer;
+}
+
+#centerdiv h3 {
+    font-size: 2vh;
+    font-weight: 900;
+}
+
+.card1 .log {
+    height: 10vh;
+    width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.card1 .log i {
+    font-size: 9vh;
+}
+
+.card1 a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: gilroy;
+}
+
+.card1 h5 {
+    color: #4a4f54;
+}
+
+.card1 a i {
+    font-size: 2vh;
+}
+
+.card1:hover a {
+    color: #005a2b;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.card1:hover .log {
+    color: #005a2b;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+#page3 {
+    /* height: 100vh; */
+    width: 100%;
+}
+
+#content h1 {
+    position: absolute;
+    font-size: 5vh;
+    font-family: rover;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: -2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#content {
+    /* height: fit-content; */
+    position: relative;
+    background-color: #e9ecec;
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 5vw 0 0 7vw;
+    justify-content: space-around;
+}
+
+.cardo {
+    width: 25vw;
+    height: 48vh;
+    padding: 4vw 5vw 4vw 0;
+    display: inline-block;
+    justify-content: space-between;
+    position: relative;
+}
+
+.carimg {
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+.carimg img {
+    width: 100%;
+    cursor: pointer;
+    /* z-index: 999; */
+}
+
+#txt {
+    font-family: rover;
+    /* padding-top: 10vh; */
+    font-weight: 700;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 18vh;
+}
+
+#txt a {
+    text-decoration: none;
+    color: #4a4f54;
+    transition: all 0.8s;
+}
+
+#txt a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.overlay {
+    height: 165%;
+    width: 100%;
+    /* transition: all 5s; */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.469);
+    display: none;
+}
+
+.carimg:hover .overlay {
+    display: initial;
+    cursor: pointer;
+}
+
+#page4 {
+    height: 80vh;
+    width: 100%;
+    background-color: #f8f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page4 .content {
+    height: 55vh;
+    /* padding: 0; */
+    width: 90vw;
+    display: flex;
+    padding-top: 20vh;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+#page4 .content .cardo {
+    /* padding-left: 4.5vw; */
+    padding: 0;
+    /* padding-right: 2.5vw; */
+    width: 25vw;
+    margin-top: -5vh;
+    display: inline-block;
+}
+
+#page4 .content .cardo #txt p {
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+
+#page4 .content .cardo a {
+    margin-top: 5vh;
+}
+
+#page5 {
+    height: 80vh;
+    background-color: #4a4f54;
+    position: relative;
+}
+
+#page5 h1 {
+    text-align: center;
+    font-family: rover;
+    padding: 5vh 0 10vh 0;
+    font-weight: 900;
+    color: white;
+}
+
+#p5co {
+    /* background-color: red; */
+    height: 93%;
+    width: 95%;
+    display: flex;
+    margin-left: 2.5vw;
+    justify-content: space-around;
+}
+
+
+
+.card {
+    height: 50vh;
+    width: 20vw;
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.8s;
+
+}
+
+.card .img1 {
+    /* height: 40vh; */
+    width: 100%;
+    /* background-color: black; */
+    position: relative;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+#txt2 {
+
+    width: 100%;
+    color: white;
+    /* display: flex; */
+    font-size: 1.3vh;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* background-color: red; */
+    align-items: flex-start;
+    font-family: abhi;
+}
+
+#txt h2 {
+    font-family: abhi;
+    font-size: 1vh;
+    text-transform: capitalize;
+    /* margin-bottom: 20vh; */
+}
+
+#txt2 p {
+    font-family: abhi;
+}
+
+#txt2 a {
+    color: white;
+    margin-top: 2vh;
+    text-decoration: none;
+    transition: all 0.8s;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding-bottom: 0.3vh;
+}
+
+.card .img1 img {
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.card #txt2 a:hover {
+    border-bottom: 0.8px solid white;
+}
+
+.card #txt2 {
+    height: 15vh;
+    /* background-color: red; */
+}
+
+.p5over {
+    height: 98.5%;
+    width: 100%;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    background-color: rgba(0, 0, 0, 0.408);
+    display: none;
+}
+
+#p5co .img1:hover .p5over {
+    display: initial;
+}
+#page6 {
+    /* height: 120vh; */
+    position: relative;
+    /* display: flex; */
+}
+#page6 h1{
+    padding: 8vh 0 0 0;
+    color: black;
+    font-family: bolly;
+    font-size: 4vh;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+}
+#p6div{
+    margin-top: 5vh;
+    height: 80%;
+    padding: 8vh 8vh 0 8vh;
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.cardp6{
+    height: 80%;
+    width: 48%;
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c6cimg{
+    height: 75%;
+    position: relative;
+}
+.c6cimg img{
+    width: 100%;
+    overflow: hidden;
+}
+.txtc6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: abhi;
+    font-size: 1.8vh;
+    font-weight: 900;
+    height: 20vh;
+    /* background-color: red; */
+}
+.c6cimg .txtc6 h4 a{
+    text-decoration: none;
+    color: black;
+}
+#hey{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding-bottom: 0.5vh;
+}
+#hey:hover{
+   border-bottom: 1px solid black;
+}
+.c6over{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.431);
+    position: absolute;
+    /* overflow: hidden; */
+    display: none;
+    z-index: 99;
+    transition: all  0.5s;
+}
+.c6cimg:hover .c6over{
+    display: block;
+}
+#page7{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(86, 85, 85);
+    position: relative;
+}
+#pg7p1{
+    height: 60%;
+    overflow: hidden;
+    background-color: black;
+}
+#pg7p1 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#pg7p2{
+    height: 50%;
+}
