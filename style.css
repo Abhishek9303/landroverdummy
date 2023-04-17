@@ -546,9 +546,9 @@ video {
     z-index: 99;
     transition: all  0.5s;
 }
-.c6cimg:hover .c6over{
+/* .c6cimg:hover .c6over{
     display: block;
-}
+} */
 #page7{
     height: 90vh;
     width: 100%;
